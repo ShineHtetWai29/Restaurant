@@ -2,13 +2,18 @@ import React from 'react'
 
 import './Menu.css'
 import {Link} from 'react-router-dom'
+import img1 from '../../img/img1.png'
+import img2 from '../../img/img2.png'
+import img3 from '../../img/img3.png'
+import img4 from '../../img/img4.png'
+import img5 from '../../img/img5.png'
+import img6 from '../../img/img6.png'
+import img7 from '../../img/img7.png'
+import img8 from '../../img/img8.png'
+
 import breakfast from '../../img/breakfast.png'
 import lunch from '../../img/lunch.png'
 import dinner from '../../img/dinner.png'
-import noodlePop from '../../img/noodlePop.png'
-import burger from '../../img/burger.png'
-import sausage from '../../img/sausage.png'
-import slad from '../../img/slad.png'
 import icon from '../../img/icon.png'
 
 import noodle from '../../img/noodle.png'
@@ -16,54 +21,55 @@ import beefSteak from '../../img//beefSteak.png'
 import friedFish from '../../img/friedFish.png'
 import salmon from '../../img/salmon.png'
 
+import Mainvisual from '../mainvisualPage/Mainvisual'
 const menuList = [
   {
     id: 1,
-    src: burger,
+    src: img1,
     name: "Australia Beef Burger with Tiwan Lettuce",
     detail:"Lorem ipsum dolor sit amet adipisicing."
   },
   {
     id: 2,
-    src: sausage,
+    src: img2,
     name: "Delecious Street Sausage",
     detail:"Lorem ipsum dolor sit amet adipisicing."
   },
   {
     id: 3,
-    src: noodlePop,
+    src: img3,
     name: "Japanese Style Noodle Pop",
     detail:"Lorem ipsum dolor sit amet adipisicing.",
   
   },
   {
     id: 4,
-    src: slad,
+    src: img4,
     name: "Indian Style Curry with fruits and pock",
     detail:"Lorem ipsum dolor sit amet adipisicing."
   },
   {
     id: 5,
-    src: sausage,
+    src: img5,
     name: "Delecious Street Sausage",
     detail:"Lorem ipsum dolor sit amet adipisicing."
 
   },
   {
     id: 6,
-    src: burger,
+    src: img6,
     name: "Australia Beef Burger with Tiwan Lettuce",
     detail:"Lorem ipsum dolor sit amet adipisicing."
   },
   {
     id: 7,
-    src: slad,
+    src: img7,
     name: "Indian Style Curry with fruits and pock",
     detail:"Lorem ipsum dolor sit amet adipisicing."
   },
   {
     id: 8,
-    src: noodlePop,
+    src: img8,
     name: "Japanese Style Noodle Pop",
     detail:"Lorem ipsum dolor sit amet adipisicing.",
   },
@@ -74,7 +80,7 @@ const specialMenu = [
     src1: noodle,
     src: icon,
     name: "Spaghetti",
-    detail:"with vegetables",
+    detail:"with Vegetables",
     price: "$30",
   },
   {
@@ -103,9 +109,11 @@ const specialMenu = [
   },
 
 ]
-const Menu = () => {
+
+const MenuLunch = () => {
   return (
     <>
+    <Mainvisual/>
       <div className='menu-title'>
         <h3>Food Menu</h3>
         <h2>Most Popular Items</h2>
@@ -138,18 +146,17 @@ const Menu = () => {
                   <h4>Menu Name: {item.name}</h4>
                   <h4>Menu Detail: {item.detail}</h4>
                 </div>
-              </div> 
+              </div>
             ))
           }
         </div>
-        
+
         <div className='menu-title'>
           <h3>Today Special</h3>
           <h2>Today Special Menu</h2>
         </div>
         <div className="menu-card">
-
-          <div className="card">
+        <div className="card">
               <div className="card-img">
                 <img src={noodle} alt={noodle} />
 
@@ -213,69 +220,30 @@ const Menu = () => {
                 <p>$ 65</p>
               </div>
           </div>
-
-          {/* <div className="card">
+          {/* {
+            specialMenu.map((item) =>(
+              <div className="card" key={item.id}>
               <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
+                <img key={item.id} src={item.src1} alt={item.alt} />
 
-                <Link to="" className='card-icon'>
-                  <img src={icon1} alt="icon" />
+                <Link to="/friedFish" className='card-icon'>
+                  <img src={item.src} alt={item.alt} />
                 </Link>
               </div>
 
               <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
+                <h4>{item.name}</h4>
+                <p>{item.detail}</p>
+                <p>{item.price}</p>
               </div>
           </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
-                <Link to="" className='card-icon'>
-                  <img src={icon} alt="icon" />
-                </Link>
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
-                <Link to="" className='card-icon'>
-                  <img src={icon} alt="icon" />
-                </Link>
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
-                <Link to="" className='card-icon'>
-                  <img src={icon} alt="icon" />
-                </Link>
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
-          </div> */}
+            ))
+          } */}
         </div>
-      </div>
 
+      </div>
     </>
   )
 }
 
-export default Menu
+export default MenuLunch
