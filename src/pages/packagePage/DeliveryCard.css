@@ -1,0 +1,67 @@
+.bgdeli{
+    background-image: url('../../img/bgdelivery.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subcard{
+    width: calc(100%/3);
+    height: 100%;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+.planfee h3{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff; 
+    text-align: center;                            
+}
+.plandata>div{
+    margin: 40px;
+}
+.plandata span{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ebff00;
+    padding-left: 30px;
+    margin: 20px;
+}
+.enrollbtn{
+    border-radius: 0;
+    border: 3px solid #ffffff;
+    color: #fe6630;
+    background: none;
+
+}
+.planbtn{
+    margin: 120px;
+    margin-bottom: 30px;
+}
+.planfooter{
+    border-radius: 0 0 20px 20px;
+    height: 60px;
+    background-color: #fa4201;
+}
+.active{
+    transform: scale(1.1);
+}
+.chgcolor{
+    background-color: #fe6630;
+}
+.deliplanfooter{
+    border-radius: 0 0 20px 20px;
+    height: 60px;
+    background-color: #fa4201;
+}
+.front{
+    backface-visibility: hidden;
+}
+.back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.cardFlip{
+    transform: rotateY(180deg);
+}
