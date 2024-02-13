@@ -36,7 +36,7 @@ const Spaghetti = () => {
               </div>
             </div>
 
-            <button type='button' className='btn'>Buy</button>
+            <button type='button' className='buybtn'>Buy</button>
 
         </div>
 

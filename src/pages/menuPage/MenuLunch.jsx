@@ -113,7 +113,7 @@ const specialMenu = [
 const MenuLunch = () => {
   return (
     <>
-    <Mainvisual/>
+    
       <div className='menu-title'>
         <h3>Food Menu</h3>
         <h2>Most Popular Items</h2>

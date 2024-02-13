@@ -149,7 +149,7 @@ const Menu = () => {
         </div>
         <div className="menu-card">
 
-          <div className="card">
+          <div className="menucard">
               <div className="card-img">
                 <img src={noodle} alt={noodle} />
 
@@ -165,7 +165,7 @@ const Menu = () => {
                 <p>$ 30</p>
               </div>
           </div>
-          <div className="card">
+          <div className="menucard">
               <div className="card-img">
                 <img src={beefSteak} alt={beefSteak} />
 
@@ -181,7 +181,7 @@ const Menu = () => {
                 <p>$ 45</p>
               </div>
           </div>
-          <div className="card">
+          <div className="menucard">
               <div className="card-img">
                 <img src={friedFish} alt={friedFish} />
 
@@ -197,7 +197,7 @@ const Menu = () => {
                 <p>$ 50</p>
               </div>
           </div>
-          <div className="card">
+          <div className="menucard">
               <div className="card-img">
                 <img src={salmon} alt={salmon} />
 

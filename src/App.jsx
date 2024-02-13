@@ -1,18 +1,21 @@
 // import { useState } from 'react'
 import './App.css'
+import Nav from './pages/navPage/Nav'
+import Footer from './pages/footerPage/Footer'
 import Mainvisual from './pages/mainvisualPage/Mainvisual'
-import Login from './pages/loginPage/Login'
-import Signup from './pages/signupPage/Signup'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
 
 function App() { 
 
   return (
-    
     <>
-
-    </>
+    <Nav/>
+    {/* <Mainvisual/> */}
+    
+    <Footer/>
+    {/* <Home/> */}
+      {/* <Mainvisual/>  */}
+      </>
   )
 }
 

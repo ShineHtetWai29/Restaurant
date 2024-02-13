@@ -1,6 +1,7 @@
 import React from 'react'
 import beefSteak from '../../img/beefSteak2.png'
 import './BeefSteak.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const BeefSteak = () => {
   return (
@@ -37,11 +38,12 @@ const BeefSteak = () => {
               </div>
             </div>
 
-            <button type='button' className='btn'>Buy</button>
+            <button type='button' className='buybtn'>Buy</button>
 
         </div>
 
       </div>
+      
     </>
   )
 }
