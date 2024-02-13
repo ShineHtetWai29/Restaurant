@@ -1,0 +1,60 @@
+.bg1{
+    background-image: url("../../img/Rectangle 54.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2{
+    background-image: url("../../img/Rectangle 55.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg3{
+    background-image: url("../../img/Rectangle 56.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    background-color: #fff;
+    margin-right: 30px;
+    border-radius: 10px 10px 0 0;
+
+}
+.card:nth-child(3){
+    margin-right: 0;
+}
+.card-title{
+    height: 119px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+
+}
+.card-title>h3{
+    color: black;
+    align-items: center;
+    font-family: 'Lato',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+    
+}
+.card-body{
+    color: #000;
+    margin-left: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+.card-body p{
+    text-align: center;
+    display: flex;
+    margin-right: 20px;
+    /* margin-top: auto; */
+}
+.card-body__data{
+    display: flex;
+    align-items: center;
+}
+.card-body__data span{
+    display: flex;
+}

@@ -1,0 +1,26 @@
+.navbar{
+    background-color: #fe6630;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.navright{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navright a{
+    text-decoration: none;
+    font-family: 'Lato',sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
+    color: black;
+}
+.ficon{
+    color: #fe6630;
+}
+.btnnav{
+    display: flex;
+    gap: 1rem;
+}

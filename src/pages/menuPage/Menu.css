@@ -1,0 +1,132 @@
+.menus {
+    max-width: 1160px;
+    margin: auto;
+}
+.menu-title h3 {
+    font-family: 'Italianno';
+    font-size: 50px;
+    color: #ebff00;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+}
+.menu-title h3::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: #ebff00;
+    top: 34px;
+    left: 30%;
+
+}
+.menu-title h3::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: #ebff00;
+    top: 34px;
+    right: 29%;
+
+}
+.menu-title h2 {
+    font-family: 'Lato', 'sans-serif';
+    color: #fe6630;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.menuSet {
+    text-align: center;
+}
+.link1 img{
+    height: 49px;
+}
+.link1:hover  {
+    border-bottom: 2px solid #fe6630;
+
+}
+.link2:hover  {
+    border-bottom: 2px solid #fe6630;
+
+}
+.link3:hover  {
+    border-bottom: 2px solid #fe6630;
+
+}
+.menus {
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+.item {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin: 50px 0;
+}
+.item-txt {
+    margin-top: 15px;
+}
+.item-txt h4{
+    margin: 0 ;
+    padding: 0;
+}
+.item-txt h4:first-child {
+    border-bottom: 2px solid #fe6630;
+}
+.item-txt h4:last-child {
+    color: #fe6630;
+}
+.menu-card {
+    max-width: 1160px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.card {
+    width: 240px;
+    height: 260px;
+    background-color: #fe6630;
+    color: #ebff00;
+
+    border-radius: 20px;
+    position: relative;
+    margin-top: 150px;
+}
+.card-img {
+    position: absolute;
+    top: -45%;
+    left: 25px;
+}
+.card-icon {
+     position: absolute;
+     right: -30px;
+}
+.card-txt {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid yellow ; */
+    margin-left: 30px;
+    margin-top: 90px;
+}
+.card-txt h4, p  {
+    font-family: 'Poppins','Sans-serif';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+.card-txt p {
+    font-weight: 400;
+}
+
+.card-txt p:last-child {
+    line-height: 60px;
+    
+}
+
