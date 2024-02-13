@@ -1,0 +1,26 @@
+.btn{
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: white;
+    font-family: 'Lato',sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+}
+.btn-login{
+    background-color: #ebff00;
+    color: black;
+
+}
+.btn-signup{
+    background-color: black;
+    color: #ebff00;
+}
+.btn-diein{
+    border-radius: 0;
+    background-color: #ebff00;
+}
+.btn-delivery{
+    border-radius: 0;
+    background-color: #fe6630;
+}
