@@ -1,0 +1,22 @@
+.innerwidth{
+    max-width:1200px ;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    
+}
+.packagebody{
+    background-image: url("../../img/Rectangle 6.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+}
+.packagetitle>h2{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #fe6630;
+}

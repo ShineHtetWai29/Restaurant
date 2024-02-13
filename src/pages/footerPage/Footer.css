@@ -1,0 +1,57 @@
+.contacticon{
+    color: #ebff00;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.firstsection>h2{
+    font-family: 'Italianno',sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.firstsection>span{
+    display: flex;
+    align-items: center;
+}
+.secondsection>span{
+    display: flex;
+    align-items: center;
+}
+.thirdsection>span{
+    display: flex;
+    align-items: center;
+}
+.secondsection>h2{
+    font-family: 'Italianno',sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.thirdsection>h2{
+    font-family: 'Italianno',sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.firstsection{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.secondsection{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.thirdsection{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.copyright{
+    text-align: center;
+}
