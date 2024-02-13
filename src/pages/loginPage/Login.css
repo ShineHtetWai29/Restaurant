@@ -1,0 +1,67 @@
+#innerDiv{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#myTitle{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: orangered;
+    margin-bottom: 0%;
+}
+
+#mySubtitle{
+    margin-top: 0%;
+    text-align: center;
+    font-size: large;
+}
+
+#logoBox{
+    text-align: center;
+}
+
+#logoFb, #logoTwitter, #logoGoogle{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    color: orangered;
+}
+
+#inputEmail{
+    color: black;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+}
+
+#inputPassword{
+    color: black;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+}
+
+#btnLogin{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+}
+
+#btnLoginBox, #signUpBox{
+    text-align: center;
+}
+
+#signUpLink{
+    color: orangered;
+}
