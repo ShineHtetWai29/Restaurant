@@ -1,54 +1,62 @@
-#innerDiv{
-    width: fit-content;
-    margin: 0 auto;
-}
-
 #myTitle{
-    
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
     color: orangered;
     margin-bottom: 0%;
 }
 
-#mySubtitle{
-    margin-top: 0%;
-    text-align: center;
-    font-size: large;
-}
-
-#logoBox{
-    text-align: center;
-}
-
-#logoFb, #logoTwitter, #logoGoogle{
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    color: orangered;
-}
-
-#inputEmail{
-    color: black;
+#firstDiv, #secDiv, #thirdDiv {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 50px;
+}
+
+#thirdDiv {
+    margin-bottom: 20px;
+}
+
+#fourthDiv {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#firstNameDiv, #emailDiv, #passwordDiv {
+    width: fit-content;
+}
+
+#lastNameDiv, #phoneDiv, #confirmPasswordDiv {
+    margin-left: 50px;
+    width: fit-content;
+}
+
+#inputFirstName, #inputLastName, #inputEmailSignup, #inputPhone, #inputPasswordSignup, #inputConfirmPassword{
+    border-radius: 10px;
+    color: black;
+    width: 180px;
+    height: 20px;
     border: none;
     outline: none;
     padding: 10px;
+    margin-top: 10px;
     background-color: white;
 }
 
-#inputPassword{
+#inputAddress{
+    border-radius: 10px;
     color: black;
-    width: 100%;
-    height: 50px;
+    width: 430px;
+    height: 75px;
     border: none;
     outline: none;
     padding: 10px;
+    margin-top: 10px;
     background-color: white;
 }
 
-#btnLogin{
+#btnSignup{
     margin-top: 20px;
     width: 200px;
     height: 50px;
@@ -58,10 +66,10 @@
     background-color: orangered;
 }
 
-#btnLoginBox, #signUpBox{
+#btnSignupBox, #loginBox{
     text-align: center;
 }
 
-#signUpLink{
+#LoginLink{
     color: orangered;
 }
