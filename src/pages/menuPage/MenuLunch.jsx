@@ -80,8 +80,9 @@ const specialMenu = [
     src1: noodle,
     src: icon,
     name: "Spaghetti",
-    detail:"with Vegetables",
+    detail:"with vegetables",
     price: "$30",
+    Link : "/spaghetti",
   },
   {
     id: 2,
@@ -90,6 +91,7 @@ const specialMenu = [
     name: "Beef Steak",
     detail:"with Lettuce",
     price: "$45",
+    Link : "/beefSteak",
   },
   {
     id: 3,
@@ -98,6 +100,7 @@ const specialMenu = [
     name: "Special Fried Sea Bass",
     detail:"with Vegetables",
     price: "$50",
+    Link : "/friedFish",
   },
   {
     id: 4,
@@ -106,6 +109,7 @@ const specialMenu = [
     name: "Japanese Style Salmon && Tuna",
     detail:"with Raw Fish",
     price: "$65",
+    Link : "/salmon",
   },
 
 ]
@@ -156,79 +160,17 @@ const MenuLunch = () => {
           <h2>Today Special Menu</h2>
         </div>
         <div className="menu-card">
-        <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt={noodle} />
-
-                <Link to={`/spaghetti`} className='card-icon'>
-                  <img src={icon} alt={icon.alt} />
-                </Link>
-
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={beefSteak} alt={beefSteak} />
-
-                <Link to={`/beefSteak`} className='card-icon'>
-                  <img src={icon} alt={icon.alt} />
-                </Link>
-
-              </div>
-
-              <div className="card-txt">
-                <h4>Beef Steak</h4>
-                <p>with Lettcue</p>
-                <p>$ 45</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={friedFish} alt={friedFish} />
-
-                <Link to={`/friedFish`} className='card-icon'>
-                  <img src={icon} alt={icon.alt} />
-                </Link>
-
-              </div>
-
-              <div className="card-txt">
-                <h4>Fried Salmon</h4>
-                <p>with vegetables</p>
-                <p>$ 50</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={salmon} alt={salmon} />
-
-                <Link to={`/salmon`} className='card-icon'>
-                  <img src={icon} alt={icon.alt} />
-                </Link>
-
-              </div>
-
-              <div className="card-txt">
-                <h4>Japanese Style Salmon & Tuna</h4>
-                <p>with Raw Sea Food</p>
-                <p>$ 65</p>
-              </div>
-          </div>
-          {/* {
+          
+        {
             specialMenu.map((item) =>(
               <div className="card" key={item.id}>
               <div className="card-img">
                 <img key={item.id} src={item.src1} alt={item.alt} />
 
-                <Link to="/friedFish" className='card-icon'>
+                <Link to={`${item.Link}`} className='card-icon'>
                   <img src={item.src} alt={item.alt} />
                 </Link>
+
               </div>
 
               <div className="card-txt">
@@ -238,7 +180,7 @@ const MenuLunch = () => {
               </div>
           </div>
             ))
-          } */}
+          }
         </div>
 
       </div>

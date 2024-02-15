@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 // import bg from '../../img/bg.png',
 const Mainvisual = () => {
   return (
-    <>
+    <> 
       <div className='mainvisual'>
         <div className="l-wrap-inner">
           <div className="mainvisual_txt">

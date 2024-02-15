@@ -16,6 +16,9 @@ import beefSteak from '../../img//beefSteak.png'
 import friedFish from '../../img/friedFish.png'
 import salmon from '../../img/salmon.png'
 
+
+
+
 const menuList = [
   {
     id: 1,
@@ -76,6 +79,7 @@ const specialMenu = [
     name: "Spaghetti",
     detail:"with vegetables",
     price: "$30",
+    Link : "/spaghetti",
   },
   {
     id: 2,
@@ -84,6 +88,7 @@ const specialMenu = [
     name: "Beef Steak",
     detail:"with Lettuce",
     price: "$45",
+    Link : "/beefSteak",
   },
   {
     id: 3,
@@ -92,6 +97,7 @@ const specialMenu = [
     name: "Special Fried Sea Bass",
     detail:"with Vegetables",
     price: "$50",
+    Link : "/friedFish",
   },
   {
     id: 4,
@@ -100,6 +106,7 @@ const specialMenu = [
     name: "Japanese Style Salmon && Tuna",
     detail:"with Raw Fish",
     price: "$65",
+    Link : "/salmon",
   },
 
 ]
@@ -149,7 +156,27 @@ const Menu = () => {
         </div>
         <div className="menu-card">
 
-          <div className="card">
+           {
+            specialMenu.map((item) =>(
+              <div className="card" key={item.id}>
+              <div className="card-img">
+                <img key={item.id} src={item.src1} alt={item.alt} />
+
+                <Link to={`${item.Link}`} className='card-icon'>
+                  <img src={item.src} alt={item.alt} />
+                </Link>
+
+              </div>
+
+              <div className="card-txt">
+                <h4>{item.name}</h4>
+                <p>{item.detail}</p>
+                <p>{item.price}</p>
+              </div>
+          </div>
+            ))
+          }
+          {/* <div className="card">
               <div className="card-img">
                 <img src={noodle} alt={noodle} />
 
@@ -212,65 +239,8 @@ const Menu = () => {
                 <p>with Raw Sea Food</p>
                 <p>$ 65</p>
               </div>
-          </div>
-
-          {/* <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
-
-                <Link to="" className='card-icon'>
-                  <img src={icon1} alt="icon" />
-                </Link>
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
-                <Link to="" className='card-icon'>
-                  <img src={icon} alt="icon" />
-                </Link>
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
-                <Link to="" className='card-icon'>
-                  <img src={icon} alt="icon" />
-                </Link>
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
-          </div>
-          <div className="card">
-              <div className="card-img">
-                <img src={noodle} alt="spaghetti" />
-                <Link to="" className='card-icon'>
-                  <img src={icon} alt="icon" />
-                </Link>
-              </div>
-
-              <div className="card-txt">
-                <h4>Spaghetti</h4>
-                <p>with vegetables</p>
-                <p>$ 30</p>
-              </div>
           </div> */}
+
         </div>
       </div>
 

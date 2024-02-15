@@ -10,7 +10,7 @@
     max-width: 1160px;
     /* margin: auto; */
 }
-.mainvisual_txt {
+.mainvisual_txt { 
     height: 650px;
     width: 600px;
     display: flex;
