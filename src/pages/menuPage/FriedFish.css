@@ -5,9 +5,9 @@
     margin-left: 50px;
     display: flex;
 
-    justify-content: start;
+    justify-content: center;
 }
-.spagti-img {
+.spagti-img { 
     width:590px;
     height: 430px;
 }

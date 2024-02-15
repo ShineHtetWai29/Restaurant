@@ -177,7 +177,6 @@ const MenuDinner = () => {
                 </Link>
 
               </div>
-
               <div className="card-txt">
                 <h4>{item.name}</h4>
                 <p>{item.detail}</p>
@@ -252,6 +251,7 @@ const MenuDinner = () => {
             <p>$ 65</p>
           </div>
       </div> */}
+      <div>hello world</div>
     </>
   )
 }

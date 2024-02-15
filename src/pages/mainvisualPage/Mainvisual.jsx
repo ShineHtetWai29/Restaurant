@@ -12,6 +12,7 @@ const Mainvisual = () => {
             <h1>Lorem ipsum dolor, sit amet conse ctetur adipis icing.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi est provident ea veritatis veniam praesentium recusandae, doloribus voluptate hic sapiente, neque nam eligendi quaerat natus repellat fugit rerum. Consequuntur, eligendi.
             </p>
+            
             <Link className='link'>See More</Link>
           </div>
 

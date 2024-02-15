@@ -9,6 +9,7 @@ const FriedFish = () => {
             <img src={spagti} alt="spagti" />
         </div>
         <div className="spagti-txt">
+          
             <h3>Special Fried Salmon</h3>
             <span className='price'>50$</span>
             <div className="box">

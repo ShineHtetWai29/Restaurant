@@ -14,7 +14,7 @@ const Salmon = () => {
             <div className="box">
                 <span>Choose something</span>
                 <span>Total</span> <br />
-                <div className="input-box">
+                <div className="input-box"> 
 
                   <input type="radio" id='1pcs' name='pcs'/>
                   <label for="1pcs">1 PCS</label>

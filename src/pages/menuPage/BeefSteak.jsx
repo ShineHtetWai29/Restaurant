@@ -3,7 +3,7 @@ import beefSteak from '../../img/beefSteak2.png'
 import './BeefSteak.css'
 
 const BeefSteak = () => {
-  return (
+  return ( 
     <>
       <div className="spagti">
         <div className="spagti-img">

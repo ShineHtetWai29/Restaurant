@@ -32,7 +32,6 @@ const Spaghetti = () => {
                   <label for="4pcs">4 PCS</label>
                   <label for="4pcs">$ 100</label>
                   <p className='amt'>Amount</p>
-     
               </div>
             </div>
 

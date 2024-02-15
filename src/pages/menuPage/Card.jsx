@@ -12,7 +12,7 @@ const Card = (props) => {
                 <div className='item-txt'>
                     <h4>Menu Name: {name}</h4>
                     <h4>Menu Detail: {detail}</h4>
-                </div>
+                </div> 
             </div>
         
   )
