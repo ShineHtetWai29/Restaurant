@@ -12,10 +12,13 @@ const PackageCard = (props) => {
                 <h3>{title}</h3>
             </div>
             <div className="card-body">
-                <div className='card-body__data'><img src={food} alt={maindish} /><span>{maindish}</span></div><br />
+              <div>
+              <div className='card-body__data'><img src={food} alt={maindish} /><span>{maindish}</span></div><br />
                 <div className='card-body__data'><img src={colddrink} alt={drink} /><span>{drink}</span></div><br />
                 <div className='card-body__data'><img src={des} alt={dessert} /><span>{dessert}</span></div><br />
                 <div className='card-body__data'><img src={sidefood} alt={sidedish} /><span>{sidedish}</span></div><br />
+              </div>
+
                 <div className="card-body__para">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita odio quas, impedit nam excepturi doloribus aperiam totam ad molestias</p>
                 </div>

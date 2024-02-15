@@ -44,6 +44,7 @@
     margin-left: 20px;
     margin-top: 30px;
     align-items: center;
+    
 }
 .card-body p{
     text-align: center;
@@ -58,3 +59,6 @@
 .card-body__data span{
     display: flex;
 }
+/* .card-body__para{
+    position: absolute;
+} */

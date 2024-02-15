@@ -1,10 +1,9 @@
 import React from 'react'
 import beefSteak from '../../img/beefSteak2.png'
 import './BeefSteak.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const BeefSteak = () => {
-  return (
+  return ( 
     <>
       <div className="spagti">
         <div className="spagti-img">
@@ -43,10 +42,8 @@ const BeefSteak = () => {
         </div>
 
       </div>
-      
     </>
   )
 }
 
 export default BeefSteak
-

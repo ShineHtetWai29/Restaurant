@@ -46,7 +46,7 @@ const Footer = () => {
             <h2>Newsletter</h2>
             <p>Lorem ipsum dolor sit, amet consectetur <br/>
             adipisicing elit. Aliquid, odit?</p>
-            <input type="text" placeholder='Your Email '></input>
+            <input type="text" placeholder='Your Email ' style={{padding: "20px"}}></input>
         </div>
     </div>
     <hr style={{border: "2px solid #fe6630"}}/>
