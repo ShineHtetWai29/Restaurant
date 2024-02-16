@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Menu.css'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import img1 from '../../img/img1.png'
 import img2 from '../../img/img2.png'
 import img3 from '../../img/img3.png'
@@ -74,6 +74,21 @@ const menuList = [
     detail:"Lorem ipsum dolor sit amet adipisicing.",
   },
 ]
+const menuSet = [
+  {
+    Link : "/",
+    src : breakfast
+  },
+  {
+    Link : "/MenuLunch",
+    src : lunch
+  },
+  {
+    Link : "/MenuDinner",
+    src : dinner
+  }
+]
+
 const specialMenu = [
   {
     id: 1,
@@ -123,20 +138,16 @@ const MenuLunch = () => {
         <h2>Most Popular Items</h2>
 
         <div className="menuSet">
-            <Link to="/" className='link1'>
-            <img src={breakfast} alt="bf" />
-            </Link>
-            
-
-            <Link to="/menuLunch" className='link2'>
-            <img src={lunch} alt="bf" />
-            </Link>
-
-
-            <Link to="/menuDinner" className='link3'>
-            <img src={dinner} alt="bf" />
-            </Link>
-
+        {
+          menuSet.map(item => (
+            <NavLink
+              to={`${item.Link}`} className= {({ isActive, isPending }) => 
+                isPending ? "pending" : isActive ? "active" : ""}>
+              <img src={item.src} alt="item.alt" />
+          
+            </NavLink>
+          ))
+        }
         </div>
         <div className="menus">
           {
@@ -170,7 +181,7 @@ const MenuLunch = () => {
                 <Link to={`${item.Link}`} className='card-icon'>
                   <img src={item.src} alt={item.alt} />
                 </Link>
-<div>Hello world</div>
+
               </div>
 
               <div className="card-txt">

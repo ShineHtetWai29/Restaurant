@@ -129,4 +129,10 @@
     line-height: 60px;
     
 }
+.pending {
+    margin-bottom: 2px solid #53e40b;
+}
+.active {
+    border-bottom: 2px solid #fe6630;    
+}
 

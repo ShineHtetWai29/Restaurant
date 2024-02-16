@@ -1,7 +1,7 @@
 import React from 'react'
 import Mainvisual from '../mainvisualPage/Mainvisual'
 import './Menu.css'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import img9 from '../../img/img9.png'
 import img10 from '../../img/img10.png'
 import img11 from '../../img/img11.png'
@@ -21,6 +21,7 @@ import breakfast from '../../img/breakfast.png'
 import lunch from '../../img/lunch.png'
 import dinner from '../../img/dinner.png'
 import Card from './Card'
+
 
 
 
@@ -76,6 +77,22 @@ const menuList = [
     detail:"Lorem ipsum dolor sit amet adipisicing.",
   },
 ]
+
+const menuSet = [
+  {
+    Link : "/",
+    src : breakfast
+  },
+  {
+    Link : "/MenuLunch",
+    src : lunch
+  },
+  {
+    Link : "/MenuDinner",
+    src : dinner
+  }
+]
+
 const specialMenu = [
   {
     id: 1,
@@ -124,19 +141,24 @@ const MenuDinner = () => {
             <h2>Most Popular Items</h2>
 
             <div className="menuSet">
-                <Link to="/" className='link1'>
+              {
+                menuSet.map(item => (
+                  <NavLink
+                   to={`${item.Link}`} className= {({ isActive, isPending }) => 
+                     isPending ? "pending" : isActive ? "active" : ""}>
+                   <img src={item.src} alt="item.alt" />
+                
+                 </NavLink>
+                ))
+              }
+
+                {/* <Link to="/" className='link1'>
                 <img src={breakfast} alt="bf" />
                 </Link>
-                
 
                 <Link to="/menuLunch" className='link2'>
                 <img src={lunch} alt="bf" />
-                </Link>
-
-
-                <Link to="/menuDinner" className='link3'>
-                <img src={dinner} alt="bf" />
-                </Link>
+                </Link> */}
 
             </div>
             <div className="items">
@@ -251,7 +273,7 @@ const MenuDinner = () => {
             <p>$ 65</p>
           </div>
       </div> */}
-      <div>hello world</div>
+
     </>
   )
 }
