@@ -117,7 +117,6 @@ const specialMenu = [
 const MenuLunch = () => {
   return (
     <>
-    
       <div className='menu-title'>
         <h3>Food Menu</h3>
         <h2>Most Popular Items</h2>
@@ -163,7 +162,7 @@ const MenuLunch = () => {
           
         {
             specialMenu.map((item) =>(
-              <div className="card" key={item.id}>
+              <div className="menucard" key={item.id}>
               <div className="card-img">
                 <img key={item.id} src={item.src1} alt={item.alt} />
 

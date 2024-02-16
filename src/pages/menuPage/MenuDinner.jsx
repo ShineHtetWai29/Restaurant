@@ -167,7 +167,7 @@ const MenuDinner = () => {
 
         {
             specialMenu.map((item) =>(
-              <div className="card" key={item.id}>
+              <div className="menucard" key={item.id}>
               <div className="card-img">
                 <img key={item.id} src={item.src1} alt={item.alt} />
 
