@@ -37,7 +37,7 @@ const BeefSteak = () => {
               </div>
             </div>
 
-            <button type='button' className='buybtn'>Buy</button>
+            <button type='button' className="buybtn">Buy</button>
 
         </div>
 
