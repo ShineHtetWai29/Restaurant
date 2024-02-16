@@ -5,6 +5,7 @@
     background-image: url(../../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 auto;
 }
 .l-wrap-inner {
     max-width: 1160px;
